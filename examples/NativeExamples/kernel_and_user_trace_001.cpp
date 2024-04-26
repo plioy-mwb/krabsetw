@@ -17,7 +17,7 @@ void kernel_and_user_trace_001::start()
     // user_trace instances should be used for any non-kernel traces that are defined
     // by components or programs in Windows. You can have multiple ETW traces in a given
     // program but each trace object will consume one thread.
-    krabs::user_trace user;
+    krabs::user_trace user(L"test1");
     krabs::kernel_trace kernel;
 
     // A trace can have any number of providers, which are identified by GUID or

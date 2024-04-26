@@ -15,7 +15,7 @@ namespace ManagedExamples
         {
             // UserTrace instances should be used for any non-kernel traces that are defined
             // by components or programs in Windows.
-            var trace = new UserTrace();
+            var trace = new UserTrace("chupeta");
 
             // A trace can have any number of providers, which are identified by GUID. These
             // GUIDs are defined by the components that emit events, and their GUIDs can
