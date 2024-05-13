@@ -32,6 +32,8 @@
     <ReadOnlyProject>false</ReadOnlyProject>
     <ReplaceWildcardsInProjectItems>true</ReplaceWildcardsInProjectItems>
     <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\$(TargetFramework)\</OutDir>
+    <TargetFrameworkVersion>
+    </TargetFrameworkVersion>
   </PropertyGroup>
   <!--
       Manually creating the path because MSBuild doesn't create this folder which causes:
@@ -55,7 +57,7 @@
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <CLRSupport>NetCore</CLRSupport>
     <SpectreMitigation>Spectre</SpectreMitigation>
